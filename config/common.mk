@@ -104,6 +104,9 @@ ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
 include vendor/lineage/config/lineage_sdk_common.mk
 endif
 
+# Dedupe VNDK libraries
+TARGET_VNDK_USE_CORE_VARIANT := true
+
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
