@@ -45,3 +45,8 @@ else
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.custom.blur.enable=false
 endif
+
+# Bypass Charging
+BYPASS_CHARGE_SUPPORTED ?= false
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.battery_bypass_supported=$(BYPASS_CHARGE_SUPPORTED)
