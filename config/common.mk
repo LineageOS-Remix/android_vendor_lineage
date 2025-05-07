@@ -97,6 +97,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=enforce
 
+# Audio service timeout
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    audio.service.client_wait_ms=8500
+
 ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
 # Lineage SDK
 include vendor/lineage/config/lineage_sdk_common.mk
