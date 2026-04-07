@@ -2,6 +2,10 @@
 $(call inherit-product, vendor/lineage/config/art.mk)
 $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
 
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworksOverlayRemix
+
 # DeviceAsWebcam
 ifeq ($(TARGET_BUILD_DEVICE_AS_WEBCAM), true)
     PRODUCT_PACKAGES += \
