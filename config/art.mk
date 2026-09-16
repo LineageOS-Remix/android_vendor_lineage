@@ -33,6 +33,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     TrebuchetQuickStep
 endif
 
+# libartpalette
+PRODUCT_HOST_PACKAGES += \
+    libartpalette
+
 # Dexopt boot types
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     pm.dexopt.first-boot=quicken \
